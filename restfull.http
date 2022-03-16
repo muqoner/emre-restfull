@@ -1,0 +1,35 @@
+@BASE_URL=http://localhost:3000/api
+
+GET {{BASE_URL}}
+
+###
+GET {{BASE_URL}}/users
+
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "name":"erdal",
+    "userName":"muqoner3",
+    "email":"easlanci3@gmail.com",
+    "password":"1234567"
+}
+
+###
+PATCH {{BASE_URL}}/users/55
+Content-Type: application/json
+
+{
+    "name":"serhat",
+    "age":34,
+    "userName":"serhado"
+}
+
+###
+DELETE {{BASE_URL}}/users/3
+
+
+
+
+
