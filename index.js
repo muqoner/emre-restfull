@@ -1,6 +1,7 @@
 const express = require("express");
 require("./db/dbColleciton")
 const userRouter = require("./routers/userRouter")
+const errorMiddleware = require("./middleware/errorMiddleware")
 
 const app = express();
 
@@ -21,6 +22,8 @@ app.get("/:id",(req,res)=>{
 app.post("/",(req,res)=>{
     res.status(200).json(req.body)
 })
+
+app.use(errorMiddleware)
 
 app.listen(3000,()=>{
     console.log("3000 portu dinleniyor");

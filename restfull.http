@@ -17,17 +17,16 @@ Content-Type: application/json
 }
 
 ###
-PATCH {{BASE_URL}}/users/55
+PATCH {{BASE_URL}}/users/6232511514992640bcb3433e
 Content-Type: application/json
 
 {
     "name":"serhat",
-    "age":34,
-    "userName":"serhado"
+    "userName":"muqoner3"
 }
 
 ###
-DELETE {{BASE_URL}}/users/3
+DELETE {{BASE_URL}}/users/6233a5eb294c5637206bbe53
 
 
 
